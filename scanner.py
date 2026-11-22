@@ -71,36 +71,36 @@ def load_previous_state() -> dict:
 def save_current_state(state: dict) -> None:
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
-def evaluate_car_from_52w_high(close_series: pd.Series, cmp_price: float):
+
+
+def evaluate_car_from_52w_high(high_series: pd.Series, close_series: pd.Series):
     """
-    1. Find the 52-week (252-trading-day) high.
-    2. Compute daily Cumulative Average (CAR) from that 52-week high date to today.
-    3. Verify CAR increased on EVERY single one of the last 10 market days
-       (not even 1 flat or down day allowed) and CMP < current CAR.
+    1. Find the 52-week (up to 252 trading days) high using High prices.
+    2. Compute daily Cumulative Average (CAR) of Close prices from that peak forward.
+    3. Return True only if CAR increased strictly on every single one of the last
+       10 market days (not even a single flat or down day).
     """
-    recent_1y = close_series.dropna().tail(252)
-    if len(recent_1y) < 11:
+    high_1y = high_series.dropna().tail(252)
+    close_clean = close_series.dropna()
+    if high_1y.empty or close_clean.empty:
         return None, False
 
-    # Position of the most recent 52-week high within the 252-day window
-    peak_pos = int(recent_1y.values.argmax())
-    post_peak_closes = recent_1y.iloc[peak_pos:]
+    peak_val = high_1y.max()
+    peak_date = high_1y[high_1y == peak_val].index[-1]
 
+    post_peak_closes = close_clean.loc[close_clean.index >= peak_date]
     # Need the peak day + at least 10 subsequent market days (11 points total)
     if len(post_peak_closes) < 11:
         return None, False
 
-    # Cumulative average from the 52-week high date forward
     car_series = post_peak_closes.expanding().mean()
     current_car = float(car_series.iloc[-1])
 
-    # Strictly increasing across all 10 most recent daily transitions
     last_11_car = car_series.tail(11)
     strictly_rising_10d = bool((last_11_car.diff().dropna() > 0).all())
 
-    # Buy / Average Out: price below CAR AND CAR strictly rising for 10 market days
-    car_buy_signal = strictly_rising_10d and (cmp_price < current_car)
-    return round(current_car, 2), car_buy_signal
+    return round(current_car, 2), strictly_rising_10d
+    
 
 def run_scanner(tickers: list[str]) -> dict:
     now_ist = datetime.now(IST)
@@ -186,7 +186,7 @@ def run_scanner(tickers: list[str]) -> dict:
             else:
                 output_status = "Unconfirmed"
 
-            _, is_car_buy = evaluate_car_from_52w_high(closes, live_cmp)
+            _, is_car_buy = evaluate_car_from_52w_high(highs, closes)
 
             qualified = (output_status == "In Bull Run") and is_car_buy
             above_50 = live_cmp > dma_50
