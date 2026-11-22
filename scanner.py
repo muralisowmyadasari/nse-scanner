@@ -11,7 +11,6 @@ STATE_FILE = "state.json"
 HTML_OUTPUT_FILE = "public/index.html"
 IST = timezone(timedelta(hours=5, minutes=30))
 
-
 def load_tickers() -> list[str]:
     if not GOOGLE_SHEET_CSV_URL:
         raise ValueError("SHEET_CSV_URL secret is empty.")
