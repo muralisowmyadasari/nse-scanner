@@ -101,10 +101,11 @@ def evaluate_car_from_52w_high(high_series: pd.Series, close_series: pd.Series):
 
     return round(current_car, 2), strictly_rising_10d
     
-
 def run_scanner(tickers: list[str]) -> dict:
     now_ist = datetime.now(IST)
     today = now_ist.date()
+    today_str = today.isoformat()
+    time_str = now_ist.strftime("%H:%M")
     start_date = today - timedelta(days=520)
     yf_symbols = [to_yahoo_symbol(t) for t in tickers]
 
@@ -133,8 +134,8 @@ def run_scanner(tickers: list[str]) -> dict:
     prev_stocks = prev_state.get("stocks", {})
     curr_stocks = {}
 
-    fresh_entries = []
-    fresh_crossovers = []
+    bull_car_today = []
+    bull_today = []
     final_list = []
 
     for nse_code, yf_sym in zip(tickers, yf_symbols):
@@ -188,40 +189,74 @@ def run_scanner(tickers: list[str]) -> dict:
 
             _, is_car_buy = evaluate_car_from_52w_high(highs, closes)
 
-            qualified = (output_status == "In Bull Run") and is_car_buy
+            is_bull = output_status == "In Bull Run"
+            qualified = is_bull and is_car_buy
             above_50 = live_cmp > dma_50
             above_200 = live_cmp > dma_200
 
             short_sym = nse_code.split(":", 1)[-1]
             prev_info = prev_stocks.get(nse_code, {})
 
-            is_new_buy = bool(prev_stocks) and qualified and not prev_info.get("qualified", False)
-            crossed_200 = bool(prev_stocks) and above_200 and not prev_info.get("above_200", True) and (0.01 <= diff_200 <= 10.0)
-            crossed_50 = bool(prev_stocks) and above_50 and not prev_info.get("above_50", True) and above_200 and (0.01 <= diff_200 <= 10.0)
+            # Track when In Bull Run occurred
+            prev_was_bull = prev_info.get("is_bull", False)
+            if is_bull:
+                if not prev_was_bull or not prev_info.get("bull_date"):
+                    bull_date = today_str
+                    bull_time = time_str
+                else:
+                    bull_date = prev_info.get("bull_date")
+                    bull_time = prev_info.get("bull_time", time_str)
+            else:
+                bull_date = None
+                bull_time = None
 
-            row_item = {
+            # Track when Bull+CAR qualified occurred
+            prev_was_qual = prev_info.get("qualified", False)
+            if qualified:
+                if not prev_was_qual or not prev_info.get("bull_car_date"):
+                    bull_car_date = today_str
+                    bull_car_time = time_str
+                else:
+                    bull_car_date = prev_info.get("bull_car_date")
+                    bull_car_time = prev_info.get("bull_car_time", time_str)
+            else:
+                bull_car_date = None
+                bull_car_time = None
+
+            is_new_buy = bool(prev_stocks) and qualified and not prev_was_qual
+
+            base_item = {
                 "symbol": short_sym,
                 "cmp": round(live_cmp, 2),
+                "dma_50": round(dma_50, 2),
+                "dma_100": round(dma_100, 2),
+                "dma_200": round(dma_200, 2),
                 "diff_200": round(diff_200, 2),
                 "new_buy": is_new_buy,
             }
 
-            if is_new_buy:
-                fresh_entries.append(row_item)
+            if qualified and bull_car_date == today_str:
+                bull_car_today.append({
+                    **base_item,
+                    "triggered_at": bull_car_time,
+                })
 
-            if crossed_200 or crossed_50:
-                fresh_crossovers.append({
-                    "symbol": short_sym,
-                    "cmp": round(live_cmp, 2),
-                    "diff_200": round(diff_200, 2),
-                    "tag": "X-200D" if crossed_200 else "X-50D",
+            if is_bull and bull_date == today_str:
+                bull_today.append({
+                    **base_item,
+                    "triggered_at": bull_time,
                 })
 
             if qualified:
-                final_list.append(row_item)
+                final_list.append(base_item)
 
             curr_stocks[nse_code] = {
                 "qualified": qualified,
+                "is_bull": is_bull,
+                "bull_date": bull_date,
+                "bull_time": bull_time,
+                "bull_car_date": bull_car_date,
+                "bull_car_time": bull_car_time,
                 "above_50": above_50,
                 "above_200": above_200,
                 "cmp": round(live_cmp, 2),
@@ -229,8 +264,8 @@ def run_scanner(tickers: list[str]) -> dict:
         except Exception:
             continue
 
-    fresh_entries.sort(key=lambda x: x["cmp"])
-    fresh_crossovers.sort(key=lambda x: x["cmp"])
+    bull_car_today.sort(key=lambda x: x["cmp"])
+    bull_today.sort(key=lambda x: x["cmp"])
     final_list.sort(key=lambda x: x["cmp"])
 
     save_current_state({
@@ -240,38 +275,53 @@ def run_scanner(tickers: list[str]) -> dict:
 
     return {
         "updated_ist": now_ist.strftime("%d-%b %H:%M IST"),
-        "fresh_entries": fresh_entries,
-        "fresh_crossovers": fresh_crossovers,
+        "bull_car_today": bull_car_today,
+        "bull_today": bull_today,
         "final_list": final_list,
     }
-    
+            
 def render_nokia_html(report: dict) -> str:
     updated = html.escape(report["updated_ist"])
-    fresh_entries = report["fresh_entries"]
-    fresh_crossovers = report["fresh_crossovers"]
+    bull_car_today = report["bull_car_today"]
+    bull_today = report["bull_today"]
     final_list = report["final_list"]
 
-    def make_rows(items: list[dict], mode: str) -> str:
+    def make_triggered_rows(items: list[dict]) -> str:
+        if not items:
+            return '<tr><td colspan="3">None today</td></tr>'
+        out = []
+        for i, item in enumerate(items, start=1):
+            sym = html.escape(item["symbol"])
+            cmp_s = f'{item["cmp"]:.1f}'
+            d50 = f'{item["dma_50"]:.1f}'
+            d100 = f'{item["dma_100"]:.1f}'
+            d200 = f'{item["dma_200"]:.1f}'
+            trig = html.escape(item.get("triggered_at", ""))
+            out.append(
+                f"<tr>"
+                f"<td>{i}.{sym}<br><small>@{trig}</small></td>"
+                f"<td>{cmp_s}</td>"
+                f"<td><small>50:{d50}<br>100:{d100}<br>200:{d200}</small></td>"
+                f"</tr>"
+            )
+        return "\n".join(out)
+
+    def make_final_rows(items: list[dict]) -> str:
         if not items:
             return '<tr><td colspan="3">None right now</td></tr>'
         out = []
         for i, item in enumerate(items, start=1):
             sym = html.escape(item["symbol"])
             cmp_s = f'{item["cmp"]:.1f}'
-            if mode == "final":
-                badge = " <b>[NEW]</b>" if item.get("new_buy") else ""
-                c3 = f'+{item["diff_200"]:.1f}%{badge}'
-            elif mode == "fresh":
-                c3 = f'+{item["diff_200"]:.1f}%'
-            else:
-                c3 = f'{html.escape(item["tag"])} (+{item["diff_200"]:.1f}%)'
+            badge = " <b>[NEW]</b>" if item.get("new_buy") else ""
+            c3 = f'+{item["diff_200"]:.1f}%{badge}'
             out.append(f"<tr><td>{i}.{sym}</td><td>{cmp_s}</td><td>{c3}</td></tr>")
         return "\n".join(out)
 
     alert_msg = (
-        f"ALERT: {len(fresh_entries)} NEW BUY!"
-        if fresh_entries
-        else "No brand-new buys in last 10m"
+        f"BULL+CAR TODAY: {len(bull_car_today)}"
+        if bull_car_today
+        else "No new Bull+CAR today"
     )
 
     return f"""<!DOCTYPE html>
@@ -286,7 +336,7 @@ h1{{font-size:16px;margin:2px 0}}
 h2{{font-size:14px;margin:8px 0 2px;background:#eee;padding:2px}}
 p{{margin:3px 0}}
 table{{width:100%;border-collapse:collapse;font-size:13px}}
-th,td{{border:1px solid #999;padding:2px 3px;text-align:left}}
+th,td{{border:1px solid #999;padding:2px 3px;text-align:left;vertical-align:top}}
 th{{background:#ddd}}
 </style>
 </head>
@@ -295,27 +345,26 @@ th{{background:#ddd}}
 <p><b>{html.escape(alert_msg)}</b></p>
 <p>{updated} | <a href="./">Refresh</a></p>
 
-<h2>1. NEW BUY ALERTS ({len(fresh_entries)})</h2>
+<h2>1. BULL+CAR TODAY ({len(bull_car_today)})</h2>
 <table>
-<tr><th>Stock</th><th>CMP</th><th>200D%</th></tr>
-{make_rows(fresh_entries, "fresh")}
+<tr><th>Stock/Time</th><th>CMP</th><th>DMAs</th></tr>
+{make_triggered_rows(bull_car_today)}
 </table>
 
-<h2>2. NEW DMA CROSS ({len(fresh_crossovers)})</h2>
+<h2>2. BULL TODAY ({len(bull_today)})</h2>
 <table>
-<tr><th>Stock</th><th>CMP</th><th>Signal</th></tr>
-{make_rows(fresh_crossovers, "cross")}
+<tr><th>Stock/Time</th><th>CMP</th><th>DMAs</th></tr>
+{make_triggered_rows(bull_today)}
 </table>
 
 <h2>3. FULL BULL+CAR ({len(final_list)})</h2>
 <table>
 <tr><th>Stock</th><th>CMP</th><th>200D%</th></tr>
-{make_rows(final_list, "final")}
+{make_final_rows(final_list)}
 </table>
 </body>
 </html>
 """
-
 
 if __name__ == "__main__":
     tickers = load_tickers()
