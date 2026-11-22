@@ -295,5 +295,6 @@ if __name__ == "__main__":
     tickers = load_tickers()
     report = run_scanner(tickers)
     html_page = render_nokia_html(report)
+    os.makedirs(os.path.dirname(HTML_OUTPUT_FILE), exist_ok=True)
     with open(HTML_OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(html_page)
