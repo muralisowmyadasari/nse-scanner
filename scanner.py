@@ -8,7 +8,7 @@ import yfinance as yf
 
 GOOGLE_SHEET_CSV_URL = os.getenv("SHEET_CSV_URL", "").strip()
 STATE_FILE = "state.json"
-HTML_OUTPUT_FILE = "index.html"
+HTML_OUTPUT_FILE = "public/index.html"
 IST = timezone(timedelta(hours=5, minutes=30))
 
 
