@@ -1,5 +1,5 @@
 {
-  "updated_ist": "2026-11-23 16:16:56 IST",
+  "updated_ist": "2026-11-23 16:28:20 IST",
   "stocks": {
     "NSE:TCS": {
       "qualified": false,
@@ -114,12 +114,6 @@
       "above_50": true,
       "above_200": true,
       "cmp": 1585.5
-    },
-    "NSE:SOLARINDS": {
-      "qualified": false,
-      "above_50": false,
-      "above_200": true,
-      "cmp": 18178.0
     },
     "NSE:IDEA": {
       "qualified": false,
