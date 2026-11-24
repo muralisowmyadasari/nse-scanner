@@ -1,5 +1,5 @@
 {
-  "updated_ist": "2026-11-24 14:18:37 IST",
+  "updated_ist": "2026-11-24 15:26:37 IST",
   "stocks": {
     "NSE:TCS": {
       "qualified": false,
@@ -822,12 +822,6 @@
       "above_50": true,
       "above_200": true,
       "cmp": 401.85
-    },
-    "NSE:TORNTPHARM": {
-      "qualified": false,
-      "above_50": true,
-      "above_200": true,
-      "cmp": 4763.7
     },
     "NSE:ABCAPITAL": {
       "qualified": false,
