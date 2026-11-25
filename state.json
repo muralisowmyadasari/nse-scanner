@@ -1,611 +1,611 @@
 {
-  "updated_ist": "2026-11-25 14:29:15 IST",
+  "updated_ist": "2026-11-25 15:45:07 IST",
   "stocks": {
     "NSE:TCS": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2493.5
+      "cmp": 2507.4
     },
     "NSE:HDFCBANK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 843.7
+      "cmp": 844.5
     },
     "NSE:LODHA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1202.5
+      "cmp": 1203.0
     },
     "NSE:INFY": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1124.6
+      "cmp": 1128.5
     },
     "NSE:ATGL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 548.35
+      "cmp": 549.35
     },
     "NSE:MCX": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 3525.0
+      "cmp": 3552.5
     },
     "NSE:GROWW": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 217.16
+      "cmp": 216.74
     },
     "NSE:PAYTM": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 1715.5
+      "cmp": 1716.9
     },
     "NSE:ETERNAL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 372.3
+      "cmp": 373.5
     },
     "NSE:BSE": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 3774.7
+      "cmp": 3775.0
     },
     "NSE:RELIANCE": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1368.2
+      "cmp": 1373.9
     },
     "NSE:BHARTIARTL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2124.9
+      "cmp": 2121.5
     },
     "NSE:LAURUSLABS": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2443.4
+      "cmp": 2445.6
     },
     "NSE:M&M": {
-      "qualified": true,
+      "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 3490.4
+      "cmp": 3505.3
     },
     "NSE:BAJFINANCE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1123.6
+      "cmp": 1124.55
     },
     "NSE:HINDALCO": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 887.0
+      "cmp": 888.5
     },
     "NSE:BEL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 402.3
+      "cmp": 402.9
     },
     "NSE:TECHM": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1793.8
+      "cmp": 1794.0
     },
     "NSE:ICICIBANK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1632.5
+      "cmp": 1638.0
     },
     "NSE:SOLARINDS": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 18169.0
+      "cmp": 18075.0
     },
     "NSE:IDEA": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 11.67
+      "cmp": 11.7
     },
     "NSE:TVSMOTOR": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 4593.9
+      "cmp": 4610.0
     },
     "NSE:POWERINDIA": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 29745.0
+      "cmp": 29720.0
     },
     "NSE:ULTRACEMCO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 12798.0
+      "cmp": 12805.0
     },
     "NSE:DIVISLAB": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 11536.0
+      "cmp": 11655.0
     },
     "NSE:MARUTI": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 14145.0
+      "cmp": 14150.0
     },
     "NSE:TMPV": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 260.95
+      "cmp": 262.5
     },
     "NSE:INDIGO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 5709.0
+      "cmp": 5726.0
     },
     "NSE:HAL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 4894.0
+      "cmp": 4921.0
     },
     "NSE:APARINDS": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 14171.0
+      "cmp": 14250.0
     },
     "NSE:SBIN": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1136.4
+      "cmp": 1138.8
     },
     "NSE:HINDZINC": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 517.35
+      "cmp": 522.0
     },
     "NSE:DIXON": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 13040.0
+      "cmp": 12993.0
     },
     "NSE:LT": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 4147.0
+      "cmp": 4148.0
     },
     "NSE:TATASTEEL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 157.34
+      "cmp": 159.0
     },
     "NSE:COFORGE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2058.0
+      "cmp": 2052.0
     },
     "NSE:DRREDDY": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1402.0
+      "cmp": 1395.7
     },
     "NSE:KALYANKJIL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 630.2
+      "cmp": 631.05
     },
     "NSE:BHEL": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 413.2
+      "cmp": 413.05
     },
     "NSE:TITAN": {
       "qualified": false,
-      "above_50": false,
+      "above_50": true,
       "above_200": true,
-      "cmp": 4648.4
+      "cmp": 4680.0
     },
     "NSE:TMCV": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 445.3
+      "cmp": 441.65
     },
     "NSE:SHRIRAMFIN": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 988.75
+      "cmp": 987.9
     },
     "NSE:ADANIPORTS": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1921.3
+      "cmp": 1919.0
     },
     "NSE:ADANIPOWER": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 205.2
+      "cmp": 205.55
     },
     "NSE:PFC": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 332.95
+      "cmp": 333.0
     },
     "NSE:ZYDUSLIFE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1222.6
+      "cmp": 1233.0
     },
     "NSE:VBL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 433.45
+      "cmp": 436.05
     },
     "NSE:POLYCAB": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 7373.5
+      "cmp": 7379.0
     },
     "NSE:ADANIENSOL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1413.6
+      "cmp": 1407.0
     },
     "NSE:MAZDOCK": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1799.1
+      "cmp": 1797.0
     },
     "NSE:ADANIENT": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 2664.0
+      "cmp": 2656.4
     },
     "NSE:POLICYBZR": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1126.4
+      "cmp": 1125.0
     },
     "NSE:SUZLON": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 36.01
+      "cmp": 36.0
     },
     "NSE:WAAREEENER": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2369.2
+      "cmp": 2382.0
     },
     "NSE:PERSISTENT": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 6149.5
+      "cmp": 6135.0
     },
     "NSE:BHARATFORG": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1725.9
+      "cmp": 1735.0
     },
     "NSE:SUNPHARMA": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1881.1
+      "cmp": 1895.6
     },
     "NSE:LENSKART": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 723.0
+      "cmp": 722.35
     },
     "NSE:NIACL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 149.53
+      "cmp": 149.68
     },
     "NSE:FEDERALBNK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 355.25
+      "cmp": 356.6
     },
     "NSE:POWERGRID": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 264.5
+      "cmp": 266.7
     },
     "NSE:TATAINVEST": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 582.6
+      "cmp": 582.0
     },
     "NSE:DLF": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 794.5
+      "cmp": 797.0
     },
     "NSE:GVT&D": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 4044.1
+      "cmp": 4050.0
     },
     "NSE:WIPRO": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 187.56
+      "cmp": 188.1
     },
     "NSE:MUTHOOTFIN": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2532.5
+      "cmp": 2550.0
     },
     "NSE:ITC": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 309.0
+      "cmp": 309.3
     },
     "NSE:KEI": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3660.9
+      "cmp": 3654.0
     },
     "NSE:AXISBANK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1422.9
+      "cmp": 1425.0
     },
     "NSE:SHREECEM": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 25210.0
+      "cmp": 25205.0
     },
     "NSE:CGPOWER": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 778.0
+      "cmp": 779.0
     },
     "NSE:SUPREMEIND": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3159.0
+      "cmp": 3160.0
     },
     "NSE:HCLTECH": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1371.3
+      "cmp": 1372.6
     },
     "NSE:CHOLAFIN": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1862.4
+      "cmp": 1864.8
     },
     "NSE:SWIGGY": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 177.8
+      "cmp": 177.9
     },
     "NSE:INDHOTEL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 902.05
+      "cmp": 899.2
     },
     "NSE:JIOFIN": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 222.76
+      "cmp": 222.5
     },
     "NSE:JSWSTEEL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1291.1
+      "cmp": 1290.1
     },
     "NSE:SAIL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 161.07
+      "cmp": 161.1
     },
     "NSE:IDFCFIRSTB": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 87.24
+      "cmp": 87.1
     },
     "NSE:LUPIN": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1991.9
+      "cmp": 2000.0
     },
     "NSE:LTM": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 4241.2
+      "cmp": 4264.0
     },
     "NSE:ADANIGREEN": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1361.6
+      "cmp": 1366.0
     },
     "NSE:BPCL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 307.45
+      "cmp": 308.1
     },
     "NSE:ASTRAL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1245.3
+      "cmp": 1244.6
     },
     "NSE:VEDL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 232.75
+      "cmp": 233.0
     },
     "NSE:HEROMOTOCO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 5681.0
+      "cmp": 5750.0
     },
     "NSE:NATIONALUM": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 287.95
+      "cmp": 287.0
     },
     "NSE:ABB": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 6989.0
+      "cmp": 7000.0
     },
     "NSE:HDFCLIFE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 599.75
+      "cmp": 603.0
     },
     "NSE:LGEINDIA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1824.2
+      "cmp": 1799.4
     },
     "NSE:SBICARD": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 588.9
+      "cmp": 588.5
     },
     "NSE:AUROPHARMA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1835.9
+      "cmp": 1840.0
     },
     "NSE:COCHINSHIP": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1079.7
+      "cmp": 1082.0
     },
     "NSE:APLAPOLLO": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1483.9
+      "cmp": 1475.0
     },
     "NSE:TATAPOWER": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 320.3
+      "cmp": 322.1
     },
     "NSE:GMRAIRPORT": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 101.87
+      "cmp": 102.2
     },
     "NSE:DMART": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 3564.7
+      "cmp": 3577.7
     },
     "NSE:GODFRYPHLP": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1759.4
+      "cmp": 1756.5
     },
     "NSE:EICHERMOT": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 8313.0
+      "cmp": 8330.5
     },
     "NSE:PAGEIND": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 30700.0
+      "cmp": 30850.0
     },
     "NSE:COALINDIA": {
       "qualified": false,
@@ -617,433 +617,433 @@
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 2666.2
+      "cmp": 2684.2
     },
     "NSE:APOLLOHOSP": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 9300.0
+      "cmp": 9290.0
     },
     "NSE:MOTHERSON": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 165.16
+      "cmp": 165.8
     },
     "NSE:JSWINFRA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 356.05
+      "cmp": 360.0
     },
     "NSE:INDIANB": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 923.5
+      "cmp": 929.95
     },
     "NSE:KPITTECH": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 517.3
+      "cmp": 516.0
     },
     "NSE:BDL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1027.0
+      "cmp": 1029.45
     },
     "NSE:BOSCHLTD": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 48910.0
+      "cmp": 48970.0
     },
     "NSE:IRFC": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 80.83
+      "cmp": 81.01
     },
     "NSE:KOTAKBANK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 508.35
+      "cmp": 509.9
     },
     "NSE:LICI": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 407.35
+      "cmp": 407.5
     },
     "NSE:NTPC": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 314.6
+      "cmp": 318.0
     },
     "NSE:ONGC": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 221.05
+      "cmp": 221.4
     },
     "NSE:NAM-INDIA": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1030.35
+      "cmp": 1028.85
     },
     "NSE:OFSS": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 9278.5
+      "cmp": 9245.0
     },
     "NSE:AMBUJACEM": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 392.35
+      "cmp": 391.0
     },
     "NSE:SIEMENS": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3555.1
+      "cmp": 3551.0
     },
     "NSE:RVNL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 184.3
+      "cmp": 185.09
     },
     "NSE:HINDPETRO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 390.85
+      "cmp": 391.2
     },
     "NSE:GODREJPROP": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1904.8
+      "cmp": 1925.0
     },
     "NSE:HINDUNILVR": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2118.0
+      "cmp": 2130.0
     },
     "NSE:YESBANK": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 17.62
+      "cmp": 17.6
     },
     "NSE:MAHABANK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 98.07
+      "cmp": 98.71
     },
     "NSE:PREMIERENE": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 819.6
+      "cmp": 820.0
     },
     "NSE:CUMMINSIND": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 4059.1
+      "cmp": 4060.0
     },
     "NSE:RECLTD": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 297.3
+      "cmp": 297.6
     },
     "NSE:ICICIAMC": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2961.1
+      "cmp": 2964.0
     },
     "NSE:PIDILITIND": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1619.1
+      "cmp": 1622.0
     },
     "NSE:BAJAJ-AUTO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 10764.0
+      "cmp": 10840.0
     },
     "NSE:SBILIFE": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1825.7
+      "cmp": 1823.0
     },
     "NSE:LICHSGFIN": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 599.5
+      "cmp": 599.85
     },
     "NSE:BLUESTARCO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1825.5
+      "cmp": 1831.0
     },
     "NSE:MAXHEALTH": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1075.55
+      "cmp": 1074.9
     },
     "NSE:NYKAA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 357.5
+      "cmp": 358.0
     },
     "NSE:EXIDEIND": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 394.4
+      "cmp": 396.0
     },
     "NSE:TORNTPHARM": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 4860.3
+      "cmp": 4857.2
     },
     "NSE:ABCAPITAL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 421.2
+      "cmp": 420.1
     },
     "NSE:ASHOKLEY": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 157.46
+      "cmp": 158.0
     },
     "NSE:JINDALSTEL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1102.5
+      "cmp": 1108.0
     },
     "NSE:FLUOROCHEM": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 4805.2
+      "cmp": 4718.9
     },
     "NSE:MFSL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1459.4
+      "cmp": 1453.6
     },
     "NSE:ASIANPAINT": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2619.5
+      "cmp": 2621.5
     },
     "NSE:NMDC": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 66.48
+      "cmp": 66.79
     },
     "NSE:HYUNDAI": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 2094.0
+      "cmp": 2113.0
     },
     "NSE:ICICIGI": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1738.7
+      "cmp": 1736.4
     },
     "NSE:ENRIN": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2969.1
+      "cmp": 2980.1
     },
     "NSE:TATAELXSI": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 3822.9
+      "cmp": 3815.0
     },
     "NSE:BIOCON": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 364.05
+      "cmp": 364.9
     },
     "NSE:BALKRISIND": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 2360.1
+      "cmp": 2352.0
     },
     "NSE:PNB": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 147.36
+      "cmp": 148.1
     },
     "NSE:CANBK": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 132.89
+      "cmp": 133.17
     },
     "NSE:ALKEM": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 5079.5
+      "cmp": 5092.5
     },
     "NSE:MEDANTA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1521.0
+      "cmp": 1529.8
     },
     "NSE:GAIL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 187.6
+      "cmp": 187.02
     },
     "NSE:JUBLFOOD": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 430.85
+      "cmp": 430.55
     },
     "NSE:INDUSINDBK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 968.35
+      "cmp": 970.05
     },
     "NSE:FORTIS": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 827.35
+      "cmp": 827.6
     },
     "NSE:OBEROIRLTY": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1856.0
+      "cmp": 1856.8
     },
     "NSE:TRENT": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 3321.6
+      "cmp": 3306.8
     },
     "NSE:BANKBARODA": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 274.29
+      "cmp": 275.49
     },
     "NSE:MARICO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 928.4
+      "cmp": 931.25
     },
     "NSE:ANTHEM": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 969.35
+      "cmp": 967.95
     },
     "NSE:NLCINDIA": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 226.98
+      "cmp": 225.5
     },
     "NSE:TATACONSUM": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1179.0
+      "cmp": 1180.0
     },
     "NSE:MANKIND": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2669.9
+      "cmp": 2685.0
     },
     "NSE:IOC": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 146.52
+      "cmp": 147.1
     },
     "NSE:LTF": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 282.8
+      "cmp": 284.05
     },
     "NSE:DALBHARAT": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1583.0
+      "cmp": 1585.9
     },
     "NSE:PRESTIGE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1674.4
+      "cmp": 1684.1
     },
     "NSE:SRF": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 2519.9
+      "cmp": 2516.0
     },
     "NSE:INDUSTOWER": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 380.6
+      "cmp": 380.5
     },
     "NSE:UNOMINDA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1375.0
+      "cmp": 1371.2
     },
     "NSE:CIPLA": {
       "qualified": true,
@@ -1053,507 +1053,507 @@
     },
     "NSE:NAUKRI": {
       "qualified": false,
-      "above_50": false,
+      "above_50": true,
       "above_200": true,
-      "cmp": 1213.4
+      "cmp": 1218.6
     },
     "NSE:OIL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 421.8
+      "cmp": 425.0
     },
     "NSE:CONCOR": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 428.05
+      "cmp": 427.4
     },
     "NSE:PATANJALI": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 403.0
+      "cmp": 406.5
     },
     "NSE:BAJAJHLDNG": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 11413.0
+      "cmp": 11406.0
     },
     "NSE:MPHASIS": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 2515.0
+      "cmp": 2535.3
     },
     "NSE:BAJAJFINSV": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1935.1
+      "cmp": 1921.9
     },
     "NSE:PHOENIXLTD": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2283.1
+      "cmp": 2282.4
     },
     "NSE:AJANTPHARM": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 3373.4
+      "cmp": 3375.3
     },
     "NSE:MOTILALOFS": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1232.65
+      "cmp": 1236.0
     },
     "NSE:MRF": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 128355.0
+      "cmp": 128505.0
     },
     "NSE:PETRONET": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 325.65
+      "cmp": 325.05
     },
     "NSE:AUBANK": {
       "qualified": false,
       "above_50": true,
-      "above_200": false,
-      "cmp": 998.75
+      "above_200": true,
+      "cmp": 1003.0
     },
     "NSE:ITCHOTELS": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 186.0
+      "cmp": 186.32
     },
     "NSE:BRITANNIA": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 4998.0
+      "cmp": 5054.5
     },
     "NSE:HONAUT": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 29300.0
+      "cmp": 29190.0
     },
     "NSE:HAVELLS": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1177.6
+      "cmp": 1176.5
     },
     "NSE:GRASIM": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 3164.0
+      "cmp": 3156.0
     },
     "NSE:GLENMARK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2715.3
+      "cmp": 2718.5
     },
     "NSE:UNIONBANK": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 212.03
+      "cmp": 212.7
     },
     "NSE:JSL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 700.4
+      "cmp": 710.0
     },
     "NSE:VMM": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 94.2
+      "cmp": 94.77
     },
     "NSE:TIINDIA": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2208.2
+      "cmp": 2213.2
     },
     "NSE:NESTLEIND": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1339.6
+      "cmp": 1352.0
     },
     "NSE:IREDA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 125.65
+      "cmp": 124.8
     },
     "NSE:UPL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 548.5
+      "cmp": 552.6
     },
     "NSE:RADICO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 4709.6
+      "cmp": 4700.0
     },
     "NSE:DABUR": {
       "qualified": false,
       "above_50": true,
-      "above_200": true,
-      "cmp": 428.8
+      "above_200": false,
+      "cmp": 426.8
     },
     "NSE:VOLTAS": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1223.7
+      "cmp": 1230.0
     },
     "NSE:JSWENERGY": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 490.05
+      "cmp": 485.95
     },
     "NSE:GODREJCP": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 954.5
+      "cmp": 960.05
     },
     "NSE:LLOYDSME": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1612.3
+      "cmp": 1606.7
     },
     "NSE:COLPAL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1812.0
+      "cmp": 1817.0
     },
     "NSE:SUNDARMFIN": {
       "qualified": false,
-      "above_50": false,
+      "above_50": true,
       "above_200": false,
-      "cmp": 4299.3
+      "cmp": 4319.4
     },
     "NSE:IPCALAB": {
       "qualified": false,
       "above_50": false,
       "above_200": true,
-      "cmp": 1832.5
+      "cmp": 1840.0
     },
     "NSE:PIIND": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1571.9
+      "cmp": 1574.2
     },
     "NSE:NHPC": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 75.71
+      "cmp": 75.8
     },
     "NSE:AIIL": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 555.15
+      "cmp": 553.7
     },
     "NSE:THERMAX": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2667.6
+      "cmp": 2655.0
     },
     "NSE:BANKINDIA": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 159.27
+      "cmp": 159.47
     },
     "NSE:M&MFIN": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 292.9
+      "cmp": 293.75
     },
     "NSE:TORNTPOWER": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 1163.0
+      "cmp": 1162.0
     },
     "NSE:360ONE": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1161.95
+      "cmp": 1165.0
     },
     "NSE:IRCTC": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 442.75
+      "cmp": 442.0
     },
     "NSE:NTPCGREEN": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 81.7
+      "cmp": 81.71
     },
     "NSE:JKCEMENT": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 5590.5
+      "cmp": 5538.0
     },
     "NSE:SCHAEFFLER": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3630.2
+      "cmp": 3590.2
     },
     "NSE:AWL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 165.82
+      "cmp": 165.89
     },
     "NSE:ABBOTINDIA": {
       "qualified": false,
       "above_50": true,
-      "above_200": false,
-      "cmp": 26405.0
+      "above_200": true,
+      "cmp": 27000.0
     },
     "NSE:HUDCO": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 155.14
+      "cmp": 155.25
     },
     "NSE:ACC": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1263.1
+      "cmp": 1262.9
     },
     "NSE:TATACAP": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 353.9
+      "cmp": 352.25
     },
     "NSE:COROMANDEL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1939.8
+      "cmp": 1940.0
     },
     "NSE:TATACOMM": {
       "qualified": false,
-      "above_50": false,
+      "above_50": true,
       "above_200": true,
-      "cmp": 1710.7
+      "cmp": 1716.8
     },
     "NSE:UNITDSPR": {
       "qualified": true,
       "above_50": true,
       "above_200": true,
-      "cmp": 1508.5
+      "cmp": 1510.0
     },
     "NSE:LTTS": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 4193.1
+      "cmp": 4205.0
     },
     "NSE:CRISIL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3996.7
+      "cmp": 3989.8
     },
     "NSE:AIAENG": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3399.7
+      "cmp": 3385.0
     },
     "NSE:KPRMILL": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 1169.7
+      "cmp": 1168.8
     },
     "NSE:UBL": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 1275.5
+      "cmp": 1275.8
     },
     "NSE:APOLLOTYRE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 430.1
+      "cmp": 436.0
     },
     "NSE:GLAXO": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2704.1
+      "cmp": 2709.0
     },
     "NSE:BAJAJHFL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 80.05
+      "cmp": 80.25
     },
     "NSE:ENDURANCE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 2620.2
+      "cmp": 2656.5
     },
     "NSE:GICRE": {
       "qualified": false,
       "above_50": true,
       "above_200": false,
-      "cmp": 337.0
+      "cmp": 338.05
     },
     "NSE:LINDEINDIA": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 6924.0
+      "cmp": 6965.0
     },
     "NSE:BHARTIHEXA": {
       "qualified": false,
-      "above_50": true,
+      "above_50": false,
       "above_200": true,
-      "cmp": 1576.6
+      "cmp": 1574.0
     },
     "NSE:HDBFS": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 562.3
+      "cmp": 560.0
     },
     "NSE:SJVN": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 55.19
+      "cmp": 55.21
     },
     "NSE:BERGEPAINT": {
       "qualified": false,
-      "above_50": true,
+      "above_50": false,
       "above_200": false,
-      "cmp": 468.95
+      "cmp": 460.0
     },
     "NSE:3MINDIA": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 27875.0
+      "cmp": 27700.0
     },
     "NSE:HEXT": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 491.1
+      "cmp": 492.0
     },
     "NSE:ESCORTS": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2430.2
+      "cmp": 2435.0
     },
     "NSE:SHIVALIK": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 268.6
+      "cmp": 272.65
     },
     "NSE:APTECHT": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 83.61
+      "cmp": 84.28
     },
     "NSE:HEIDELBERG": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 119.39
+      "cmp": 119.78
     },
     "NSE:RAMASTEEL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 3.98
+      "cmp": 3.99
     },
     "NSE:TVTODAY": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 100.56
+      "cmp": 100.4
     },
     "NSE:VAIBHAVGBL": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 156.07
+      "cmp": 156.38
     },
     "NSE:BASF": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 2900.0
+      "cmp": 2928.0
     },
     "NSE:IRMENERGY": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 248.38
+      "cmp": 248.12
     },
     "NSE:PYRAMID": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 145.49
+      "cmp": 146.0
     },
     "NSE:TEJASNET": {
       "qualified": false,
       "above_50": false,
       "above_200": false,
-      "cmp": 401.25
+      "cmp": 403.0
     },
     "NSE:GRAPHITE": {
       "qualified": false,
       "above_50": true,
       "above_200": true,
-      "cmp": 797.0
+      "cmp": 788.6
     }
   }
 }
